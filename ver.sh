@@ -1,0 +1,13 @@
+GitPath="Android_data/files/"
+AndroidPath="/sdcard/Android/data/com.YoStarEN.AzurLane/files/"
+echo "Git version: $(cat ${GitPath}version.txt)"
+echo "Rem version: $(adb shell cat ${AndroidPath}version.txt)"
+echo "=========================="
+
+echo "Git cv: $(cat ${GitPath}version-cv.txt)"
+echo "Rem cv: $(adb shell cat ${AndroidPath}version-cv.txt)"
+echo "=========================="
+
+echo "Git live2d: $(cat ${GitPath}version-live2d.txt)"
+echo "Rem live2d: $(adb shell cat ${AndroidPath}version-live2d.txt)"
+echo "=========================="
