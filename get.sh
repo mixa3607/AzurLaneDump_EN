@@ -1,3 +1,4 @@
+Device="$1"
 rm -rf Android_data/files
-adb pull /sdcard/Android/data/com.YoStarEN.AzurLane/files Android_data/
+adb -s "$Device" pull /sdcard/Android/data/com.YoStarEN.AzurLane/files Android_data/
 
