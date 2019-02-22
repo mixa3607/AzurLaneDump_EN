@@ -9,8 +9,15 @@ if [ "$IsRun" == "y" ]
 then
    echo 'run "git add ."'
    git add .
+   git status
    echo 'run "git commit -m "' $BuildedVerStr
    git commit -m "$BuildedVerStr"
 else
    echo "$BuildedVerStr"
 fi
+if [ "$IsRun" == "p" ]
+then
+    echo "git push to master"
+    git push origin master
+fi
+
