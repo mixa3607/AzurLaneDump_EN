@@ -1,6 +1,6 @@
 IsRun=$1
 Files="Android_data/files/"
-AppVer="1.2.125"
+AppVer=$(cat "APK/ver.txt" | tr -d "\r\n")
 CvVer=$(cat "${Files}version-cv.txt")
 ScriptsVer=$(cat "${Files}version.txt")
 L2dVer=$(cat "${Files}version-live2d.txt")
