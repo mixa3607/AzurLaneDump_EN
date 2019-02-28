@@ -1,4 +1,4 @@
-echo $1
+#echo $1
 Device="$1"
 GitPath="Android_data/files/"
 AndroidPath="/sdcard/Android/data/com.YoStarEN.AzurLane/files/"
